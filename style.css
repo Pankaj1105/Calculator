@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+
+body {
+  background-color: rgb(231, 227, 227);
+  /* background-color: grey; */
+  height: 100vh;
+  display: flex;
+
+  justify-content: center; /* from left and right (according to width)*/
+  align-items: center; /* frame ka bicho bich from top botoom ( according to height) */
+}
+
+.frame {
+  height: 600px;
+  width: 460px;
+  background-color: white;
+  padding: 10px;
+
+  box-shadow: 5px 5px 15px #68cdca, -5px -5px 10px #ffffff; /* horizontal vertical and blur and colour name , - for left side */
+}
+
+.heading {
+  text-align: center;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* screen */
+#display {
+  height: 90px;
+  width: 100%;
+  border: none;
+  background: transparent;
+
+  box-shadow: inset 2px 2px 10px #b4edf4, inset -5px -5px 10px #ffffff;
+
+  font-size: 30px;
+  padding: 10px;
+
+  box-sizing: border-box;
+
+  text-align: right; /*joh hum likh rha voh left side sa aarha tha right side sa anna keliya textalign*/
+}
+
+.buttons-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button {
+  width: 85px;
+  height: 85px;
+  border: none;
+  outline: none;
+
+  box-shadow: 5px 5px 10px #b6acac, -5px -5px 10px #fafaf4;
+  margin-bottom: 15px;
+}
+
+.button:active {
+  box-shadow: inset 1px 1px 2px #babecb, inset -1px -1px 2px #ffffff;
+}
+
+.button:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}

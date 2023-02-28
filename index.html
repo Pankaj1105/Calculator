@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <div class="frame">
+
+        <p class="heading">Calculator</p>
+
+        <!-- display - screen -->
+        <div class="display">
+
+            <input type="text" id="display">
+
+        </div>
+        <br>
+
+        <!-- Buttons -->
+        <div class="buttons-group">
+            <br>
+
+            <input class="button" type="button" value="9" onclick="display.value +='9' ">
+            <!--onclick="display"-direct display likhna sa woh id dhundega kiskaa id display ha 
+            uski value assign karo  -->
+            <!-- += return for conatinate the string -->
+
+            <input class="button" type="button" value="8" onclick="display.value +='8' ">
+            <input class="button" type="button" value="7" onclick="display.value +='7' ">
+            <input class="button" type="button" value="+" onclick="display.value +='+' ">
+        </div>
+
+        <div class="buttons-group">
+            <br>
+            <input class="button" type="button" value="6" onclick="display.value +='6' ">
+            <input class="button" type="button" value="5" onclick="display.value +='5' ">
+            <input class="button" type="button" value="4" onclick="display.value +='4' ">
+            <input class="button" type="button" value="-" onclick="display.value +='-' ">
+        </div>
+
+
+        <div class="buttons-group">
+            <br>
+            <input class="button" type="button" value="3" onclick="display.value +='3' ">
+            <input class="button" type="button" value="2" onclick="display.value +='2' ">
+            <input class="button" type="button" value="1" onclick="display.value +='1' ">
+            <input class="button" type="button" value="*" onclick="display.value +='*' ">
+        </div>
+
+
+        <div class="buttons-group">
+            <br>
+            <input class="button" type="button" value="CLR" onclick="display.value =''">
+            <input class="button" type="button" value="0" onclick="display.value +='0' ">
+            <input class="button" type="button" value="/" onclick="display.value +='/' ">
+            <input class="button" type="button" value="=" onclick="display.value = eval(display.value) ">
+        </div>
+
+    </div>
+
+
+
+</body>
+
+</html>
